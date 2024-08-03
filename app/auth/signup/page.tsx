@@ -6,7 +6,7 @@ import React from "react";
 function page() {
   return (
     <div className='h-full w-full flex flex-col items-center justify-center'>
-      <div className='w-[70%] mx-auto'>
+      <div className='w-[80%] sm:w-[70%] mx-auto'>
         <BookRentAuthHeader />
         <h1 className='mt-5 md:mt-10 text-center md:text-start text-2xl md:text-4xl pb-1 border-b border-b-gray-200'>
           Signup into Book Rent
@@ -16,7 +16,6 @@ function page() {
             id='email'
             label='Email address'
             name='email'
-            placeholder='Enter your email address'
             type='email'
             required
           />
@@ -24,7 +23,6 @@ function page() {
             id='password'
             label='Password'
             name='password'
-            placeholder='Enter your password'
             type='password'
             required
           />
@@ -32,7 +30,6 @@ function page() {
             id='confirmPassword'
             label='Confirm password'
             name='confirmPassword'
-            placeholder='Confirm your password'
             type='password'
             required
           />
@@ -40,7 +37,6 @@ function page() {
             id='location'
             label='Location'
             name='location'
-            placeholder='Enter your location'
             type='text'
             required
           />
@@ -48,7 +44,6 @@ function page() {
             id='phone'
             label='Phone Number'
             name='phone'
-            placeholder='Enter your phone number'
             type='tel'
             required
           />
@@ -71,7 +66,7 @@ function page() {
           </div>
         </form>
 
-        <div className='mt-10 text-center'>
+        <div className='mt-5 text-center'>
           <p className='text-lg'>
             Already have an account?{" "}
             <Link className='text-picton-400 font-medium' href={"/auth/login"}>

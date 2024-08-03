@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply text-lg;
+}
+
+/* common attributes */
+.unFocusedLabel::before,
+.focusedLabel::before,
+.focusedLabelDimmed::before {
+  content: attr(data-label);
+  position: absolute;
+  left: 18px;
+  padding: 2px 4px;
+  pointer-events: none;
+  border-radius: 4px;
+}
+
+/* Commin to these two */
+.focusedLabel::before,
+.focusedLabelDimmed::before {
+  top: -7px;
+  background-color: white;
+  @apply text-sm;
+}
+
+.unFocusedLabel::before {
+  top: 5px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+  min-width: 300px;
+  @apply text-gray-400;
+}
+
+.focusedLabel::before {
+  @apply text-picton-400;
+}
+
+.focusedLabelDimmed::before {
+  @apply text-gray-400;
+}
