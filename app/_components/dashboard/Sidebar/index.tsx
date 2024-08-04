@@ -1,8 +1,8 @@
 "use client";
 
-import { MdSpaceDashboard } from "react-icons/md";
+import { FaBook, FaChartLine, FaCog, FaEnvelope } from "react-icons/fa";
 import { GiBookCover } from "react-icons/gi";
-import { FaChartLine, FaCog, FaEnvelope, FaUser } from "react-icons/fa";
+import { MdSpaceDashboard } from "react-icons/md";
 
 import SidebarGroup from "@/app/_components/dashboard/Sidebar/SidebarGroup";
 import SidebarHeader from "@/app/_components/dashboard/Sidebar/SidebarHeader";
@@ -59,9 +59,9 @@ const sidebarItems = [
     href: "/dashboard/admin",
   },
   {
-    label: "Profile",
-    icon: <FaUser />,
-    href: "/profile",
+    label: "Books",
+    icon: <FaBook />,
+    href: "/dashboard/admin/books",
   },
   {
     label: "Settings",

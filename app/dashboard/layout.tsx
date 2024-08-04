@@ -15,11 +15,11 @@ function Layout({ children }: Props) {
         <Sidebar />
       </SidebarProvider>
       {/* content */}
-      <div className='space-y-4 w-full h-full grid grid-rows-[auto_1fr]'>
+      <div className='w-full h-full grid grid-rows-[auto_1fr]'>
         {/* breadcrumb */}
         <Breadcrumb />
         {/* main content */}
-        <div>{children}</div>
+        <div className='pt-5'>{children}</div>
       </div>
     </div>
   );

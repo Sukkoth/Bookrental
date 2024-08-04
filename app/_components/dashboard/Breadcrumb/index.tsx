@@ -16,7 +16,7 @@ function Breadcrumb() {
   });
 
   return (
-    <div className='bg-white rounded-md p-5 uppercase text-xl'>
+    <div className='bg-white rounded-md p-5 uppercase text-xl shadow-lg shadow-gray-100'>
       {/* no /dashboard route for now */}
       {links.map((link, index) =>
         index === 0 ? (

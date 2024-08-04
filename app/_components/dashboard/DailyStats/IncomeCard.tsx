@@ -5,7 +5,7 @@ function IncomeCard() {
   return (
     <div className='p-5 shadow-lg rounded-md shadow-gray-100'>
       <div className='flex items-center justify-between pb-3 border-b border-b-gray-300'>
-        <h2 className='font-medium text-2xl text-gray-600'>Income</h2>
+        <h2 className='font-medium text-xl text-gray-600'>Income</h2>
         <div className='border py-1 px-2 rounded-md bg-gray-200 text-gray-600 text-sm'>
           Today
         </div>
