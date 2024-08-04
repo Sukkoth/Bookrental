@@ -14,6 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
+        "dashboard-bg": "#F0F2FF",
         midnight: {
           "50": "#eff6fe",
           "100": "#e2edfd",
